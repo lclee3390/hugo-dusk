@@ -168,10 +168,12 @@ th { background: var(--main-bg-color); }
 }
 
 .rmore {
+  font-size: 12px;
   color: var(--main-text);
 }
 
 .rmore a {
+  
   background: var(--main-bg-color);
   border: 1px solid var(--border-color);
 }

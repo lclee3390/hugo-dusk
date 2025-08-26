@@ -1,8 +1,20 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, Gadget, sans-serif;
+  font-family: 
+    "Helvetica Neue", Helvetica, Arial, Gadget,
+    "PingFang TC",   /* macOS/iOS 傳統中文 */
+    "PingFang SC",   /* macOS/iOS 簡體中文 */
+    "Noto Sans TC",  /* Google 思源黑體繁體 */
+    "Noto Sans SC",  /* Google 思源黑體簡體 */
+    "Microsoft JhengHei", /* Windows 正黑體 */
+    "Microsoft YaHei",    /* Windows 微軟雅黑 */
+    sans-serif;
   counter-reset: heading;
   margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+
 }
+
 
 .main {
   margin: auto;
@@ -88,13 +100,15 @@ nav {
 }
 
 .nav-item {
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
+  padding-right: 8px;
+  margin:0px;
 }
 
 .nav-item-title {
-  padding: 0.2em;
+  /* padding: 0.2em; */
 }
 
 .nav-item-title:hover {
@@ -129,7 +143,8 @@ th, td {
 
 /* site title  */
 .siteTitle {
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
+  font-size: 25px;
   margin-bottom: 0.2em;
 }
 
@@ -205,7 +220,7 @@ th, td {
   margin-top: 0.3em;
   padding-bottom: 0.2em;
   font-size: 0.8em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .post-footer-data .updated {
@@ -365,7 +380,9 @@ th, td {
 
 .social-link {
   margin: 0.2em;
-  font-size: 1.2em;
+  font-size: 10px;
+
+  font-weight: 300;
 }
 
 .social-link:hover {
@@ -479,6 +496,8 @@ th, td {
 .post-preview .title {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+  
+  margin-left: 8px;
 }
 
 .post-preview a {
@@ -511,6 +530,7 @@ th, td {
 .post-preview .date {
   font-weight: bold;
   text-align: left;
+  
 }
 
 .post-preview .tags {
@@ -672,8 +692,10 @@ th, td {
   }
 
   .nav-item-title {
-    font-size: 0.85em;
-    font-weight: bold;
+    /* font-size: 0.85em; */
+    /* font-weight: bold; */
+    font-size: 14px;
+    font-weight: 100;
   }
 
   .social-links-header {
