@@ -103,13 +103,23 @@ nav {
   /* font-size: 1.3em; */
   text-decoration: none;
   /* font-weight: bold; */
-  padding-right: 8px;
+  padding-right: 2px;
   margin:0px;
 }
 
 .nav-item-title {
   /* padding: 0.2em; */
 }
+nav > div {
+  display: flex;         /* 讓子元素橫向排列 */
+  gap: 1rem;             /* 控制間距 */
+}
+
+.nav-item {
+  text-decoration: none; /* 拿掉底線 */
+  padding: 0.5rem 0.1rem;  /* 增加內距 */
+}
+
 
 .nav-item-title:hover {
   text-decoration: underline;
@@ -228,7 +238,7 @@ th, td {
   margin-top: 0.3em;
   padding-bottom: 0.2em;
   font-size: 0.8em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .post-footer-data .syndicate {

@@ -71,6 +71,16 @@ th { background: var(--main-bg-color); }
   color: var(--main-sec);
 }
 
+nav > div {
+  display: flex;         /* 讓子元素橫向排列 */
+  gap: 1rem;             /* 控制間距 */
+}
+
+.nav-item {
+  text-decoration: none; /* 拿掉底線 */
+  padding: 0.5rem 1rem;  /* 增加內距 */
+}
+
 .post {
   background: var(--secondary-bg-color);
   border-left: 1px solid var(--border-color);
