@@ -25,8 +25,13 @@
   {{end}}
 
   <div class="social-link">
-  {{ with .OutputFormats.Get "rss" -}}
+    
+  <!-- {{ with .OutputFormats.Get "rss" -}}
     <a href="{{ .RelPermalink }}">RSS</a>
+  {{ end }} -->
+  
+  {{ with .OutputFormats.Get "RSS" -}}
+    <a href="{{ $.Site.BaseURL }}index.xml">RSS</a>
   {{ end }}
   </div>
 
