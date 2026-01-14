@@ -4,13 +4,17 @@
  * */
 
 :root {
-    --main-bg-color: #101010;
-    --secondary-bg-color: #202020;
-    --main-text: #ffffff;
-    --main-sec: #65c0d7; /* main secondary color for the site */
-    --code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
-    --copyright: #808080; /* copyright text color */
-    --border-color: #000000;
+    --main-bg-color: #11151a;
+    --secondary-bg-color: #191f27;
+    --main-text: #e8ecf1;
+    --main-sec: #8aa9c4; /* cold gray-blue accent */
+    --code-quote-bg: #151b24; /* background color for quotes and code blocks */
+    --copyright: #8f9dad; /* copyright text color */
+    --border-color: #2a3440;
+    --card-shadow: 0 1px 2px 0 #0c1016, 0 2px 5px 0 #0c1016;
+    --panel-bg: #1e2530;
+    --panel-bg-strong: #273140;
+    --divider-color: rgba(138, 157, 173, 0.35);
 }
 
 body {
@@ -41,7 +45,7 @@ a {
 }
 
 pre {
-  background: var(--main-bg-color);
+  background: var(--code-quote-bg);
   border: 1px solid var(--border-color);
   border-radius: 5px;
 }
@@ -55,11 +59,11 @@ code {
  * looks better if overwritten.
  * */
 .post .content .highlight table {
-  background-color: var(--main-bg-color) !important;
+  background-color: var(--code-quote-bg) !important;
 }
 
 blockquote {
-  background: var(--main-bg-color);
+  background: var(--code-quote-bg);
   border-left: 3px solid var(--main-sec);
 }
 
@@ -72,12 +76,12 @@ th { background: var(--main-bg-color); }
 }
 
 .post {
-  background: var(--secondary-bg-color);
+  background: var(--panel-bg-strong);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
   border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+  box-shadow: var(--card-shadow);
 }
 
 .post .content h1{ color: var(--main-sec); }
@@ -95,10 +99,10 @@ th { background: var(--main-bg-color); }
 .poweredby a { color: var(--copyright); }
 
 .post-preview {
-  border: 1px solid var(--border-color);
+  border: none;
   border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
-  background: var(--secondary-bg-color);
+  box-shadow: var(--card-shadow);
+  background: var(--panel-bg-strong);
 }
 
 .post-preview .meta {
@@ -148,10 +152,10 @@ th { background: var(--main-bg-color); }
 }
 
 .content-item {
-  background: var(--secondary-bg-color);
+  background: var(--panel-bg);
   border: 1px solid var(--border-color);
   border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+  box-shadow: var(--card-shadow);
 }
 
 .content-item .meta {
@@ -185,7 +189,7 @@ th { background: var(--main-bg-color); }
 .terms {
   background: var(--secondary-bg-color);
   border: 1px solid var(--border-color);
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+  box-shadow: var(--card-shadow);
 }
 
 .terms .term {
@@ -201,7 +205,7 @@ th { background: var(--main-bg-color); }
   border: 1px solid var(--border-color);
   border-radius: 0.2em;
   background: var(--secondary-bg-color);
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+  box-shadow: var(--card-shadow);
 }
 
 .alert-warning {
@@ -247,7 +251,7 @@ th { background: var(--main-bg-color); }
 .related-content {
   border: 1px solid var(--border-color);
   border-radius: 0.2em;
-  box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
+  box-shadow: var(--card-shadow);
   background: var(--secondary-bg-color);
 }
 

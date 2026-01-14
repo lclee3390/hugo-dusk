@@ -1,8 +1,19 @@
 {{ partial "header.html" . }}
 <main>
 
-  {{ range (where .Site.RegularPages "Type" "in" (union site.Params.mainSections (slice "micro"))) }}
-    {{ .Render "li" }}
+  {{ $pages := where .Site.RegularPages "Type" "in" (union site.Params.mainSections (slice "micro")) }}
+  {{ range $year := $pages.GroupByDate "2006" }}
+    <section class="archive-year">
+      <h2>{{ $year.Key }}</h2>
+      <ul class="archive-year-list">
+        {{ range $page := $year.Pages }}
+          <li>
+            <span class="archive-item-date">{{ $page.Date.Format "01/02" }}</span>
+            <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
   {{ end }}
 
 </main>
