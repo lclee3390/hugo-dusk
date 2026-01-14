@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+<main>
 <article class="post">
 
   <h1 class="title"> {{ .Title }} </h1>
@@ -49,6 +50,7 @@
   <hr class="post-title-divider">
   <div class="content"> {{ .Content }} </div>
 </article>
+</main>
 
 {{ partial "related-content.html" . }}
 {{ partial "footer.html" . }}

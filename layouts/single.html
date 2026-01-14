@@ -1,10 +1,12 @@
 {{ partial "header.html" . }}
 
-<article class="post">
-    <h1 class="title"> {{ .Title }} </h1>
-    <hr class="post-title-divider">
-    <div class="content"> {{ .Content }} </div>
-    {{ partial "postfooter.html" . }}
-</article>
+<main>
+  <article class="post">
+      <h1 class="title"> {{ .Title }} </h1>
+      <hr class="post-title-divider">
+      <div class="content"> {{ .Content }} </div>
+      {{ partial "postfooter.html" . }}
+  </article>
+</main>
 
 {{ partial "footer.html" . }}
