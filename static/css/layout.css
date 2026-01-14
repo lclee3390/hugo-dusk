@@ -125,6 +125,7 @@ nav > div {
 .nav-item {
   text-decoration: none; /* 拿掉底線 */
   padding: 0.5rem 0.1rem;  /* 增加內距 */
+  text-transform: lowercase;
 }
 
 
@@ -684,6 +685,48 @@ th, td {
   border: 0;
   background: var(--main-sec, #8aa9c4);
   opacity: 0.6;
+}
+
+.home-hero {
+  padding: 1.2em 0.8em 0.8em;
+  border-bottom: 1px solid var(--divider-color, rgba(138, 157, 173, 0.35));
+}
+
+.home-title {
+  margin: 0 0 0.3em;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--main-sec, #8aa9c4);
+}
+
+.home-subtitle {
+  margin: 0;
+  font-size: 1em;
+  color: var(--copyright, #8f9dad);
+}
+
+.home-section {
+  padding: 0.8em 0.8em 0.4em;
+}
+
+.home-heading {
+  margin: 0 0 0.4em;
+  font-size: 1.25em;
+  letter-spacing: 0.04em;
+}
+
+.home-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.home-link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--divider-color, rgba(138, 157, 173, 0.35));
+}
+
+.home-link:hover {
+  color: var(--main-sec, #8aa9c4);
 }
 
 .metadata .tags .tag a {
